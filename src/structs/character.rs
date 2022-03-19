@@ -1,3 +1,4 @@
+#[derive(Clone, Copy)]
 pub struct Character<'a> {
     pub character_value: char,
     pub character_type: &'a str
