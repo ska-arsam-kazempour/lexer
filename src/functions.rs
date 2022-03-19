@@ -56,16 +56,15 @@ pub fn character_categorizing<'b>(characters: Vec<Character<'b>>) -> Vec<Vec<Cha
 pub fn tokenizer<'b>(catcharacters: Vec<Vec<Character<'b>>>) -> Vec<String> {
     let mut result = Vec::new();
 
-    let mut tmp1 = String::new();
-
     for cat in catcharacters {
-        tmp1.clear();
+        let mut tmp1 = String::new();
 
         for character in cat {
             tmp1.push(character.character_value);
         }
-
+        
         result.push(tmp1.clone());
+        tmp1.clear();
     }
 
     return result;
