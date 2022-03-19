@@ -3,5 +3,6 @@ pub mod structs {
 }
 
 pub mod analyze {
+    pub mod character_categorizing;
     pub mod characterizing;
 }
