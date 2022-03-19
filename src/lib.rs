@@ -1,8 +1,6 @@
-pub mod structs {
-    pub mod character;
-}
+pub mod functions;
 
-pub mod analyze {
-    pub mod character_categorizing;
-    pub mod characterizing;
+pub mod structs {
+    pub mod token;
+    pub mod character;
 }
