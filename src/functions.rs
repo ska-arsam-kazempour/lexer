@@ -1,5 +1,4 @@
 use crate::structs::character::Character;
-use crate::structs::token::Token;
 
 pub fn characterizing<'b, const T: usize>(text: &'b str, charmaps: [[&'b str; 2]; T]) -> Vec<Character<'b>> {
     let mut result = Vec::new();
