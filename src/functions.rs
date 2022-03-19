@@ -47,6 +47,9 @@ pub fn character_categorizing<'b>(characters: Vec<Character<'b>>) -> Vec<Vec<Cha
         }
     }
 
+    result.push(tmp1.clone());
+    tmp1.clear();
+
     return result;
 }
 
